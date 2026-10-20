@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+audio/
+.cache/
+*.mp3
+*.epub
+*.tmp*
+.run.lock
+report.json
+failures.json
+validation.json

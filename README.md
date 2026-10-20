@@ -1,4 +1,18 @@
-# 本地 TXT 听书（EasyVoice 批量版）
+# 本地听书：EPUB 在线语音与 TXT / EasyVoice
+
+## EPUB → MP3（新增）
+
+无需 Docker、付费 API Key 或本地语音模型。使用 Python 提取 EPUB，调用 Edge 在线语音，默认晓晓女声、语速 -15%。
+
+- 同章片段 1～3 路并发，默认 3；按原文顺序合并。
+- 哈希缓存、失败续跑、失败清单、完整 MP3 解码检查。
+- 独立入口与安装说明：[epub/README.md](epub/README.md)。
+- 设计对比：[epub/COMPARISON.md](epub/COMPARISON.md)。
+- 验证记录：[epub/VALIDATION.md](epub/VALIDATION.md)。
+
+以下保留原有 TXT / EasyVoice 使用说明。
+
+## 本地 TXT 听书（EasyVoice 批量版）
 
 这个项目用于把超长小说 TXT 切分后，批量调用本地 EasyVoice Docker 服务生成 MP3。
 
